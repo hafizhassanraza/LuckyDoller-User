@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+
+
+    <style name="Base.Theme.LuckyDoller" parent="Theme.Material3.Dark">
+
+
+        <item name="android:statusBarColor">@color/black_m</item>
+
+
+
+
+
+    </style>
+
+    <!--<style name="Theme.LuckyDoller" parent="Base.Theme.LuckyDoller" />-->
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ActivityNewBid">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUCKY DOLLAR"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:minWidth="380dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"
+            android:elevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Game"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/primary"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:text="گیم"/>
+                </LinearLayout>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/black_m"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spGameCtg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="17dp"
+                        android:padding="15dp"/>
+
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Sub Game"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/primary"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="سب گیم"/>
+                </LinearLayout>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/black_m"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spGameSubCtg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarSize="17dp"
+                        android:padding="15dp"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Number"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/primary"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:text="نمبر"/>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/etBidNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:layout_marginHorizontal="5dp"
+                    android:hint="Bid Number"
+                    android:paddingVertical="12dp"
+                    android:textSize="17dp"
+
+                    android:textColor="@color/primary"
+                    android:inputType="number"
+                    android:paddingHorizontal="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/ammount"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/primary"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="رقم"/>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/etBidAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="17dp"
+
+                    android:textColor="@color/primary"
+                    android:inputType="number"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction ID"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="7dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/primary"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:text="ٹرانزیکشن آئی ڈی"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etBidTransactionID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Transaction ID"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="17dp"
+
+                    android:textColor="@color/primary"
+                    android:inputType="number"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp" />
+
+
+                <Button
+                    android:id="@+id/btnBid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Add Bid"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/primary"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"/>
+        <Button
+            android:id="@+id/btnSaveAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/primary"
+            android:text="Save All"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

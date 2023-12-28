@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ActivityResult">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUCKY DOLLAR"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGetResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="2dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/black_m"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spGameCtg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"/>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:strokeWidth="1dp"
+                    android:visibility="gone"
+                    app:strokeColor="@color/black_m"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spGameSubCtg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                <DatePicker
+                    android:id="@+id/dpResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"/>
+
+                <Button
+                    android:id="@+id/btnGetResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Result"
+                    android:textSize="18dp"
+
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/primary"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result : 1"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tvdateTimeResult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="(date / time)"
+
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/primary"
+                    android:text="1st"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="100dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="فرسٹ"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/primary"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/tvFirstNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="2nd"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tvSecondNumber"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Number"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="25dp"/>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="2nd"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tvThirdNumber"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Number"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="25dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="2nd"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tvFourthNumber"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Number"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="25dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result : 2"
+                android:textSize="20dp"
+                android:textColor="@color/primary"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tvdateTimeResult2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="(date / time)"
+
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="1st"
+                    android:textColor="@color/primary"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="100dp">
+                    <TextView
+                        android:id="@+id/tvEFirstNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginHorizontal="10dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="2nd"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tvESecondNumber"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Number"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="25dp"/>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="2nd"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tvEThirdNumber"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Number"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="25dp"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="2nd"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tvEFourthNumber"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:text="Number"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="25dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

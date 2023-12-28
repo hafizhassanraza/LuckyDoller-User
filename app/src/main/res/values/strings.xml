@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lucky Doller</string>
+    <string name="login"><b><u>Login</u></b></string>
+    <string name="login1"><b>Login</b></string>
+    <string name="result">Results</string>
+    <string name="bid">Bid</string>
+    <string name="livestream">Live Stream</string>
+    <string name="contact"><b>Contact Via</b></string>
+    <string name="create">Create Account?</string>
+    <string name="signup"><b><u>Sign Up</u></b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

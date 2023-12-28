@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.ActivityBid">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LUCKY DOLLAR"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/tv1">
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cd2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="6dp"
+             android:layout_marginTop="11dp"
+             app:cardCornerRadius="8dp"
+             app:cardBackgroundColor="@color/gray"
+             android:layout_marginHorizontal="50dp">
+
+             <com.google.android.material.tabs.TabLayout
+                 android:id="@+id/tabLayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginBottom="7dp"
+                 android:layout_margin="7dp"
+                 android:background="@color/gray"
+                 app:tabGravity="fill"
+                 app:tabIndicator="@drawable/tab_indicator"
+                 app:tabIndicatorColor="@color/primary_n"
+                 app:tabIndicatorFullWidth="true"
+                 app:tabIndicatorGravity="stretch"
+                 app:tabIndicatorHeight="54dp"
+                 app:tabInlineLabel="true"
+                 app:tabMode="fixed"
+                 app:tabTextColor="@color/primary" />
+
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="75dp"
+             app:cardBackgroundColor="@color/primary_n"
+             android:layout_marginBottom="3dp">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+
+                 <GridLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:rowCount="1"
+                     android:columnCount="8">
+
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="0"
+                         android:layout_row="0"
+                         android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"
+                         android:layout_marginRight="3dp"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:id="@+id/tvGameCtg"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:text="گیم"
+                             android:textColor="@color/primary"
+                             android:textStyle="bold" />
+
+
+
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="1"
+                         android:layout_row="0"
+                         android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"
+                         android:layout_marginRight="3dp"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:id="@+id/tvGameSubCtg"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerVertical="true"
+                             android:layout_gravity="center_horizontal"
+                             android:text="سب گیم"
+                             android:textColor="@color/primary"
+                             android:textStyle="bold" />
+
+
+
+                     </RelativeLayout>
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="3"
+                         android:layout_row="0"
+                         android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"
+                         android:layout_marginRight="3dp"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:id="@+id/tvGameBidNumber"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginLeft="5dp"
+                             android:text="نمبر"
+                             android:textColor="@color/primary" />
+
+
+
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="4"
+                         android:layout_row="0"
+                         android:layout_columnWeight="2.5"
+                         android:layout_rowWeight="1"
+                         android:layout_marginRight="3dp"
+                         android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:textColor="@color/primary"
+                                 android:id="@+id/tvGameBidAmount"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center_horizontal"
+                                 android:layout_centerInParent="true"
+                                 android:text="رقم"/>
+
+                         </LinearLayout>
+
+
+
+
+                     </RelativeLayout>
+
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="6"
+                         android:layout_row="0"
+                         android:layout_columnWeight="1"
+                         android:layout_rowWeight="1"
+                         android:gravity="center"
+                         android:layout_marginRight="3dp"
+                         android:orientation="vertical">
+                         <TextView
+                             android:textColor="@color/primary"
+                             android:id="@+id/tvGameResult"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:textStyle="bold"
+                             android:text="نتیجہ"/>
+
+
+                     </LinearLayout>
+
+
+                     <LinearLayout
+                         android:layout_width="5dp"
+                         android:layout_height="wrap_content"
+                         android:layout_column="5"
+                         android:layout_row="0"
+                         android:layout_columnWeight="2"
+                         android:layout_rowWeight="1"
+                         android:layout_marginRight="3dp">
+                         <TextView
+                             android:textColor="@color/primary"
+                             android:id="@+id/tvGameDate"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textStyle="bold"
+                             android:layout_gravity="center"
+                             android:layout_marginLeft="10dp"
+                             android:text="تاریخ"/>
+                     </LinearLayout>
+
+
+
+
+
+                 </GridLayout>
+
+             </LinearLayout>
+
+
+         </androidx.cardview.widget.CardView>
+
+
+
+
+         <androidx.viewpager2.widget.ViewPager2
+             android:id="@+id/viewPager"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingTop="40dp"
+             android:layout_below="@+id/cd2"
+             android:layout_alignParentBottom="true">
+         </androidx.viewpager2.widget.ViewPager2>
+
+
+
+
+     </RelativeLayout>
+
+
+
+</RelativeLayout>
